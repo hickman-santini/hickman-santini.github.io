@@ -1,0 +1,100 @@
+/* General Elements */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+img.animated-gif {
+  width: 50px;
+  height: auto;
+}
+
+.detail {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* Overall Container */
+body {
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  padding: 10px;
+  font-size: 16px;
+  max-width: 950px;
+}
+
+
+/* Banner */
+.mollybox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 642px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+.mollysection {
+  padding-right: 15px;
+}
+
+
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navitem {
+  text-align: center;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: #0645AD;
+}
+
+.pagelink.current {
+  font-weight: bold;
+}
+
+
+/* Content Body */
+.contentbodyviewport {
+  overflow: hidden;
+}
+
+.dynamicbox {
+  display: flex;
+  /* Defines the properties of the animation */
+  transition: transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.dynamicbox.static {
+  transition: none;
+}
+
+.page {
+  width: 100%;
+}
+
+.cairn {
+  max-width: 600px;
+}
