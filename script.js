@@ -5,13 +5,19 @@ let content = document.querySelector(".dynamicbox");
 content.style.width = pagenum * 100 + "%";
 
 links.forEach((elem) => {
-  elem.addEventListener("click", () => {
+  elem.addEventListener("click", (e) => {
     // console.log(elem)
     content.style.transform = "translateX(" + (-(elem.id - 1) * 100 / pagenum) + "%";
     links.forEach((link) => {
       link.classList.remove("current")
     });
-    elem.classList.add("current")
+    elem.classList.add("current");
+    if (elem.id == 1) {
+      window.location.hash = "";
+    }
+    else {
+      window.location.hash = "#" + elem.id;
+    }
   })
 })
 

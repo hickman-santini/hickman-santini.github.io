@@ -1,9 +1,4 @@
 /* General Elements */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 li {
   margin-bottom: 5px;
 }
@@ -19,6 +14,11 @@ img.animated-gif {
 
 .detail {
   font-size: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -51,6 +51,11 @@ main {
   padding-right: 15px;
 }
 
+.mollysection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 
 /* Navigation */
 .navigation {
@@ -66,9 +71,9 @@ main {
   font-size: 18px;
 }
 
-.navitem a {
-  text-decoration: none;
+.pagelink {
   color: #0645AD;
+  cursor: pointer;
 }
 
 .pagelink.current {
