@@ -1,10 +1,53 @@
 /* General Elements */
+body {
+  margin: 0;
+  background: #f5f1e8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+main {
+  margin: 0 auto;
+  padding: 40px 60px;
+  max-width: 750px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+
+a {
+  color: #E52B50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E52B50;
+  text-decoration: underline;
+}
+
 li {
   margin-bottom: 5px;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 img.animated-gif {
@@ -17,69 +60,63 @@ img.animated-gif {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
-/* Overall Container */
-body {
-  margin: 0;
-}
-
-main {
-  margin: auto;
-  padding: 10px;
-  font-size: 16px;
-  max-width: 950px;
-}
-
-
-/* Banner */
-.mollybox {
+/* Top Links */
+.top-links {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.5;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  max-width: 642px;
-  border: 1px solid gray;
-  padding: 5px 10px;
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 18px;
 }
 
-.mollysection {
-  padding-right: 15px;
+.top-links a {
+  color: #E52B50;
 }
 
-.mollysection ul {
-  list-style-type: none;
-  padding: 0;
+.top-links a:hover {
+  color: #E52B50;
 }
 
+.sep {
+  color: #bbb;
+  font-size: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14px;
+}
 
 /* Navigation */
 .navigation {
   display: flex;
+  gap: 6px;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
 }
 
 .navitem {
-  text-align: center;
-  margin-right: 5px;
-  padding: 5px;
-  font-size: 18px;
+  color: #999;
 }
 
 .pagelink {
-  color: #0645AD;
+  color: #999;
   cursor: pointer;
 }
 
 .pagelink.current {
-  font-weight: bold;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #333;
+  padding-bottom: 4px;
+  margin-bottom: -16px;
 }
-
 
 /* Content Body */
 .contentbodyviewport {
@@ -88,18 +125,31 @@ main {
 
 .dynamicbox {
   display: flex;
-  /* Defines the properties of the animation */
+  width: 300%;
   transition: transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.dynamicbox.static {
-  transition: none;
+.page {
+  flex: 0 0 calc(100% / 3);
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.page {
-  width: 100%;
+.profile-photo {
+  float: left;
+  width: 190px;
+  height: auto;
+  margin: 0 22px 20px 0;
 }
 
 .cairn {
   max-width: 600px;
+  margin-top: 30px;
+  clear: both;
+}
+
+.cairn img {
+  width: 100%;
+  height: auto;
 }
